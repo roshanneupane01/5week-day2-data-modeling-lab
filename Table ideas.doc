@@ -1,0 +1,17 @@
+Table Ideas
+
+User: this table will hold information about users, including user's first name, last name, username, password, email, and phone number. Also, each row will be an individual user and the columns will be the attributes provided earlier that gives a particular information about the user.
+
+Ingredients: this table will hold information about different ingredients that goes into becoming a receipe.
+
+Recipe: this table will hold information about recipes, including instructions, and the ingredients that goes in to making a recipe and recipes name.
+
+Occasion: this table will hold information about occasion, including different occasion's names, and various receipe names.
+
+Photos: this table will hold information about photos, inculding photos url, and references to the posts they are associated with.
+
+Posts: this table will hold information about post, including post content, and if the post is public or private.
+
+Recipe_Occasion: this table will hold information about both the recipe and occasion's ids.
+
+Recipe_Ingredient: this table will hold information about both the recipe and ingredient's ids.

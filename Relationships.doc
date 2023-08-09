@@ -1,0 +1,63 @@
+Relationships
+
+1. one-to-one:
+
+2. one-to-many:
+- User and Posts table because each user can have multiple posts, but a post is only for one specific user.
+
+- User and Recipe table because each user can have multiple recipes, but each recipe is uniquely made by one user.
+
+3. many-to-many:
+- Photos and Posts table because each photo can be on multiple posts as well as each post can have multiple photos.
+
+- Recipe and Ingredients table because each recipe can have multiple ingredients as well as each ingredient can be on multiple recipes.
+
+- Occasion and Recipe table because each occasion can have multiple recipes, as well as each recipe can be associated with multiple occasions.
+
+
+Columns
+
+---- User ----
+user_id: Stores a unique identifier for each user.
+first_name: Stores the user's first name for personalization.
+last_name: Stores the user's last name for personalization.
+username: Stores a unique username for identification.
+password: Stores a hashed password for secure authentication.
+email: Stores the user's email for communication and authentication.
+phone: Stores the user's phone number for contact.
+profile_picture: Stores a link to the user's profile picture for visual identification.
+
+---- Ingredients ----
+ingredient_id: Stores a unique identifier for each ingredient.
+ingredient_name: Stores the name of the ingredient for recipes.
+
+---- Recipe ----
+recipe_id: Stores a unique identifier for each recipe.
+recipe_name: Stores the name of the recipe.
+recipe_instructions: Stores detailed instructions for preparing the recipe.
+user_id: Stores a reference to the user who created the recipe.
+
+---- Occasion ----
+occasion_id: Stores a unique identifier for each occasion.
+occasion_name: Stores the name of the occasion for categorization.
+
+---- Post ----
+post_id: Stores a unique identifier for each post.
+post_content: Stores the content of the post, such as user comments or descriptions.
+is_public: Stores whether the post is public or private.
+user_id: Stores a reference to the user who created the post.
+
+---- Photos ----
+photo_id: Stores a unique identifier for each photo.
+photo_url: Stores the URL of the photo for display.
+post_id: Stores a reference to the post associated with the photo.
+
+---- Recipe_Occasion ----
+recipe_occasion_id: Stores a unique identifier for each recipe-occasion relationship.
+recipe_id: Stores a reference to the recipe associated with the occasion.
+occasion_id: Stores a reference to the occasion associated with the recipe.
+
+---- Recipe_Ingredient ----
+recipe_ingredient_id: Stores a unique identifier for each recipe-ingredient relationship.
+recipe_id: Stores a reference to the recipe associated with the ingredient.
+ingredient_id: Stores a reference to the ingredient associated with the recipe.
